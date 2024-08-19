@@ -4,12 +4,8 @@ const config: Config = {
   content: ["./src/**/*.tsx"],
   theme: {
     extend: {
-      colors: {
-        primary: "#FF6363",
-        secondary: {
-          100: "#E2E2D5",
-          200: "#888883",
-        },
+      gridTemplateColumns: {
+        app: "minmax(18rem, 20rem) 1fr",
       },
     },
   },
