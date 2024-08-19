@@ -1,9 +1,11 @@
+import { SettingsTabs } from "./components/settings-tabs";
+
 export default function Home() {
   return (
-    <div>
-      <h1 className="text-center text-4xl font-bold">
-        Hello, Tailwind Master!
-      </h1>
-    </div>
+    <>
+      <h1 className="to-zinc-900 text-3xl font-medium">Settings</h1>
+
+      <SettingsTabs />
+    </>
   );
 }
