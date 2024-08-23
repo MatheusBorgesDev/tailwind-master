@@ -5,6 +5,7 @@ import { Trash2, UploadCloud } from "lucide-react";
 
 import { formatBites } from "@/utils/format-bites";
 
+import { Button } from "../../button";
 import { useFileInputContext } from "./root";
 
 export function FileList() {
@@ -47,12 +48,9 @@ export function FileList() {
               <span className="">80%</span>
             </div>
           </div>
-          <button
-            type="button"
-            className="ml-auto rounded-md p-2 hover:bg-zinc-50"
-          >
+          <Button type="button" variant="ghost">
             <Trash2 size={20} className="text-zinc-500" />
-          </button>
+          </Button>
         </div>
       ))}
     </div>
