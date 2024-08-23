@@ -5,6 +5,7 @@ import { Label } from "./components/form/label";
 import { Select } from "./components/form/select";
 import { SelectItem } from "./components/form/select/select-item";
 import { TextArea } from "./components/form/text-area";
+import { TextEditorButton } from "./components/form/text-editor-button";
 import { InputControl, InputPrefix, InputRoot } from "./components/input";
 import { SettingsTabs } from "./components/settings-tabs";
 
@@ -144,48 +145,11 @@ export default function Home() {
                 </Select>
 
                 <div className="flex items-center gap-1">
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
-                    <Bold size={16} className="text-zinc-500" strokeWidth={3} />
-                  </button>
-
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
-                    <Italic
-                      size={16}
-                      className="text-zinc-500"
-                      strokeWidth={3}
-                    />
-                  </button>
-
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
-                    <Link size={16} className="text-zinc-500" strokeWidth={3} />
-                  </button>
-
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
-                    <List size={16} className="text-zinc-500" strokeWidth={3} />
-                  </button>
-
-                  <button
-                    type="button"
-                    className="rounded-md p-2 hover:bg-zinc-50"
-                  >
-                    <ListOrdered
-                      size={16}
-                      className="text-zinc-500"
-                      strokeWidth={3}
-                    />
-                  </button>
+                  <TextEditorButton icon={Bold} />
+                  <TextEditorButton icon={Italic} />
+                  <TextEditorButton icon={Link} />
+                  <TextEditorButton icon={List} />
+                  <TextEditorButton icon={ListOrdered} />
                 </div>
               </div>
 
