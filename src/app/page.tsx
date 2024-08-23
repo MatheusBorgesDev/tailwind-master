@@ -6,7 +6,6 @@ import { Label } from "./components/form/label";
 import { Select } from "./components/form/select";
 import { SelectItem } from "./components/form/select/select-item";
 import { TextArea } from "./components/form/text-area";
-import { TextEditorButton } from "./components/form/text-editor-button";
 import { InputControl, InputPrefix, InputRoot } from "./components/input";
 import { SettingsTabs } from "./components/settings-tabs";
 
