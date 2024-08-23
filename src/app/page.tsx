@@ -1,6 +1,7 @@
 import { Bold, Italic, Link, List, ListOrdered, Mail } from "lucide-react";
 
 import * as FileInput from "./components/form/file-input";
+import { Label } from "./components/form/label";
 import { Select } from "./components/form/select";
 import { SelectItem } from "./components/form/select/select-item";
 import { TextArea } from "./components/form/text-area";
@@ -44,12 +45,8 @@ export default function Home() {
           className="mt-6 flex w-full flex-col gap-5 divide-y divide-zinc-200"
         >
           <div className="grid grid-cols-form gap-3">
-            <label
-              htmlFor="firstName"
-              className="text-sm font-medium text-zinc-700"
-            >
-              Name
-            </label>
+            <Label htmlFor="firstName">Name</Label>
+
             <div className="grid grid-cols-2 gap-6">
               <InputRoot>
                 <InputControl id="firstName" defaultValue="Matheus" />
@@ -62,12 +59,8 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
-            <label
-              htmlFor="email"
-              className="text-sm font-medium text-zinc-700"
-            >
-              Email address
-            </label>
+            <Label htmlFor="email">Email address</Label>
+
             <InputRoot>
               <InputPrefix>
                 <Mail className="h-5 w-5 text-zinc-500" />
@@ -81,15 +74,12 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
-            <label
-              htmlFor="photo"
-              className="text-sm font-medium text-zinc-700"
-            >
+            <Label htmlFor="photo">
               Your photo
               <span className="mt-0.5 block text-sm font-normal text-zinc-500">
                 This will be displayed on your profile.
               </span>
-            </label>
+            </Label>
 
             <FileInput.Root className="flex items-start gap-5">
               <FileInput.ImagePreview />
@@ -101,21 +91,15 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
-            <label htmlFor="role" className="text-sm font-medium text-zinc-700">
-              Role
-            </label>
+            <Label htmlFor="role">Role</Label>
+
             <InputRoot>
               <InputControl id="role" defaultValue="Web Developer" />
             </InputRoot>
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
-            <label
-              htmlFor="country"
-              className="text-sm font-medium text-zinc-700"
-            >
-              Country
-            </label>
+            <Label htmlFor="country">Country</Label>
 
             <Select placeholder="Select a country...">
               <SelectItem value="br" text="Brazil" />
@@ -126,12 +110,8 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
-            <label
-              htmlFor="timezone"
-              className="text-sm font-medium text-zinc-700"
-            >
-              Timezone
-            </label>
+            <Label htmlFor="timezone">Timezone</Label>
+
             <div>
               <Select placeholder="Select a timezone...">
                 <SelectItem
@@ -145,12 +125,12 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
-            <label htmlFor="bio" className="text-sm font-medium text-zinc-700">
+            <Label htmlFor="bio">
               Bio
               <span className="mt-0.5 block text-sm font-normal text-zinc-500">
                 Write a short introduction.
               </span>
-            </label>
+            </Label>
 
             <div className="space-y-3">
               <div className="grid grid-cols-2 gap-3">
@@ -220,15 +200,12 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-form gap-3 pt-5">
-            <label
-              htmlFor="projects"
-              className="text-sm font-medium text-zinc-700"
-            >
+            <Label htmlFor="projects">
               Portfolio projects
               <span className="mt-0.5 block text-sm font-normal text-zinc-500">
                 Share a few snippets of your work.
               </span>
-            </label>
+            </Label>
 
             <FileInput.Root>
               <FileInput.Trigger />
