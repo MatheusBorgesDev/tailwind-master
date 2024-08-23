@@ -1,8 +1,9 @@
-import { Mail } from "lucide-react";
+import { Bold, Italic, Link, List, ListOrdered, Mail } from "lucide-react";
 
 import * as FileInput from "./components/form/file-input";
 import { Select } from "./components/form/select";
 import { SelectItem } from "./components/form/select/select-item";
+import { TextArea } from "./components/form/text-area";
 import { InputControl, InputPrefix, InputRoot } from "./components/input";
 import { SettingsTabs } from "./components/settings-tabs";
 
@@ -150,6 +151,71 @@ export default function Home() {
                 Write a short introduction.
               </span>
             </label>
+
+            <div className="space-y-3">
+              <div className="grid grid-cols-2 gap-3">
+                <Select defaultValue="normal">
+                  <SelectItem
+                    value="normal"
+                    defaultChecked
+                    text="Normal text"
+                  />
+                  <SelectItem value="md" text="Markdown" />
+                </Select>
+
+                <div className="flex items-center gap-1">
+                  <button
+                    type="button"
+                    className="rounded-md p-2 hover:bg-zinc-50"
+                  >
+                    <Bold size={16} className="text-zinc-500" strokeWidth={3} />
+                  </button>
+
+                  <button
+                    type="button"
+                    className="rounded-md p-2 hover:bg-zinc-50"
+                  >
+                    <Italic
+                      size={16}
+                      className="text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+
+                  <button
+                    type="button"
+                    className="rounded-md p-2 hover:bg-zinc-50"
+                  >
+                    <Link size={16} className="text-zinc-500" strokeWidth={3} />
+                  </button>
+
+                  <button
+                    type="button"
+                    className="rounded-md p-2 hover:bg-zinc-50"
+                  >
+                    <List size={16} className="text-zinc-500" strokeWidth={3} />
+                  </button>
+
+                  <button
+                    type="button"
+                    className="rounded-md p-2 hover:bg-zinc-50"
+                  >
+                    <ListOrdered
+                      size={16}
+                      className="text-zinc-500"
+                      strokeWidth={3}
+                    />
+                  </button>
+                </div>
+              </div>
+
+              <TextArea
+                id="bio"
+                defaultValue={
+                  "Experienced front-end developer specializing in React, JavaScript, and TypeScript. Adept at creating high-performance, scalable applications using NextJS and Tailwind CSS. With a commitment to clean, maintainable code and a keen eye for design, I deliver user-focused web solutions that align with business objectives"
+                }
+              />
+            </div>
             <div />
           </div>
 
