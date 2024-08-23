@@ -7,7 +7,7 @@ import { useFileInputContext } from "./root";
 type ControlProps = ComponentProps<"input">;
 
 export function Control({ multiple = false, ...props }: ControlProps) {
-  const { id, onFilesSelected: onFilesSelected } = useFileInputContext();
+  const { id, onFilesSelected } = useFileInputContext();
 
   function handleFilesSelected(event: ChangeEvent<HTMLInputElement>) {
     if (!event.target.files?.length) {
