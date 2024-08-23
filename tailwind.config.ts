@@ -1,3 +1,4 @@
+import { transform } from "next/dist/build/swc";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -17,6 +18,22 @@ const config: Config = {
         violet: {
           25: "#fcfaff",
         },
+      },
+
+      keyframes: {
+        slideDownAndFade: {
+          from: { opacity: "0", transform: "translateY(-10px)" },
+          to: { opacity: "1" },
+        },
+        // slideUpAndFade: {
+        //   from: { opacity: "1" },
+        //   to: { opacity: "0" },
+        // },
+      },
+
+      animation: {
+        slideDownAndFade: "slideDownAndFade 0.5s cubic-bezier(0.16, 1, 0.3, 1)",
+        // slideUpAndFade: "slideUpAndFade 0.2s linear",
       },
     },
   },
