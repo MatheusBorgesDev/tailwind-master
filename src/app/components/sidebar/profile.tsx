@@ -17,16 +17,16 @@ export function Profile() {
       />
 
       <div className="flex flex-col truncate">
-        <span className="text-sm font-semibold text-zinc-700">
+        <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-100">
           Matheus Borges
         </span>
-        <span className="truncate text-sm text-zinc-500">
+        <span className="truncate text-sm text-zinc-500 dark:text-zinc-400">
           matheusb.dev@gmail.com
         </span>
       </div>
 
       <Button type="button" variant="ghost">
-        <LogOut size={20} className="text-zinc-500" />
+        <LogOut size={20} />
       </Button>
     </div>
   );
