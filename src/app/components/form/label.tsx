@@ -14,7 +14,7 @@ export function Label({
   return (
     <label
       htmlFor={htmlFor}
-      className={`text-sm font-medium text-zinc-700 ${lgScreenSrOnly ? "lg:sr-only" : ""}`}
+      className={`text-sm font-medium text-zinc-700 dark:text-zinc-300 ${lgScreenSrOnly ? "lg:sr-only" : ""}`}
       {...props}
     >
       {children}
