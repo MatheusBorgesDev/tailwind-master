@@ -1,13 +1,18 @@
 import { LogOut } from "lucide-react";
+import Image from "next/image";
 
 import { Button } from "../button";
+
+const urlImg = "https://github.com/MatheusBorgesDev.png";
 
 export function Profile() {
   return (
     <div className="grid grid-cols-profile items-center gap-4">
-      <img
-        src="https://github.com/MatheusBorgesDev.png"
+      <Image
+        src={urlImg}
         alt="Matheus Borges"
+        width={0}
+        height={0}
         className="h-10 w-10 rounded-full"
       />
 
