@@ -46,6 +46,8 @@ const config: Config = {
 
       animation: {
         slideDownAndFade: "slideDownAndFade 0.5s cubic-bezier(0.16, 1, 0.3, 1)",
+        slideSlowDownAndFade:
+          "slideDownAndFade 1s cubic-bezier(0.16, 1, 0.3, 1)",
         // slideUpAndFade: "slideUpAndFade 0.2s linear",
       },
     },
