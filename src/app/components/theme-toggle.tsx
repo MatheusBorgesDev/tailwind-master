@@ -23,13 +23,13 @@ export function ThemeToggle() {
   return (
     <Button
       variant="outline"
-      className="flex items-center justify-between gap-1"
+      className="flex items-center justify-between gap-1 hover:bg-violet-100"
       onClick={() => {
         toggleTheme();
       }}
     >
       Theme:
-      {darkMode ? <Sun size={20} /> : <Moon size={20} />}
+      {!darkMode ? <Sun size={20} /> : <Moon size={20} />}
     </Button>
   );
 }
