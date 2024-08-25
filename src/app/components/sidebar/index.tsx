@@ -16,6 +16,7 @@ import {
 
 import { Button } from "../button";
 import { InputControl, InputPrefix, InputRoot } from "../input";
+import { ThemeToggle } from "../theme-toggle";
 import { Logo } from "./logo";
 import { NavItem } from "./nav-item";
 import { Profile } from "./profile";
@@ -35,7 +36,7 @@ export function Sidebar() {
 
       <Collapsible.CollapsibleContent
         forceMount
-        className="animate-slideSlowDownAndFade flex flex-1 flex-col gap-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
+        className="flex flex-1 animate-slideSlowDownAndFade flex-col gap-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
       >
         <InputRoot>
           <InputPrefix>
@@ -61,6 +62,8 @@ export function Sidebar() {
           </nav>
 
           <UsedSpaceWidget />
+
+          <ThemeToggle />
 
           <div className="h-px bg-zinc-200 dark:bg-zinc-700" />
 
