@@ -1,6 +1,6 @@
 # Dashboard Tailwind Master
 
-## Application created to master skills with Tailwind CSS.
+## Application created to master Tailwind CSS skills.
 
 > The project aimed to improve knowledge about Tailwind CSS, Theme API, Responsiveness, Breakpoints, Dark Mode, Animations, Image context and components variants, using React, Next.JS, TypeScript and Tailwind CSS to build it.
 
